@@ -4,7 +4,7 @@ services:
     build: .
     image: 'tsungbao/mythesis'
     volumes:
-      - '../docker_volume:/thesis/docker_volume'
+      - './docker_volume:/thesis/docker_volume'
     command: ' tail -F anything'
               # To avoid the container from exiting right after all the 
               # commands are done

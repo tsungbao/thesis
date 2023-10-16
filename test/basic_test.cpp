@@ -140,10 +140,10 @@ int main(){
     //     <<"," << a_f << std::endl ; 
     
                     // tl = -1 => random
-    std::vector<int> tls = {-1,10,30,50} ; // {-1,10,30,50}
-    std::vector<int> rs = {10,500,1000,1500} ; // {10,500,1000,1500}
+    std::vector<int> tls = {-1,10,30,50} ; 
+    std::vector<int> rs = {10,500,1000,1500} ; 
     std::vector<int> u_to_ts = {10,30,50,70,90} ; 
-    std::vector<double> picks_ratios = {0.1,0.3,0.5,0.7} ; //{0.1,0.3,0.5,0.7}
+    std::vector<double> picks_ratios = {0.1,0.3,0.5,0.7} ; 
 
     for(int tl : tls){
         for (int u_to_t : u_to_ts){
