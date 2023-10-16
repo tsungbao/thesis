@@ -150,7 +150,7 @@ int main(){
             int u = (int) u_to_t * t * 0.01 ;   
             for (int r : rs){
                 std::vector<std::vector<double>> a_f_results ; 
-                for(int repeat = 0 ; repeat < 100 ; repeat++){
+                for(int repeat = 0 ; repeat < 20 ; repeat++){
                     // r and s should be larger than "pick" in order to
                     //  accomodate live pages from "pick" victim blocks
 
