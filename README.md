@@ -45,11 +45,11 @@ There are four parameters as the input. They are
 4. $M/s$: The ratio of the number of the victim blocks per round of garbage collection to the number of blocks in the window.
    
 
-The inputs are hard-coded in test/basic_test.cpp as shown in the following figure.
+The inputs are hard-coded in `test/basic_test.cpp` as shown in the following figure.
 ![alt text](https://github.com/tsungbao/thesis/blob/master/miscellaneous/inputs.jpg?raw=true)
 
 ### Output
-
+The outputs are in `docker_volume/result_average.txt` with the following format.
 ### Class diagram
 
 ### Special parts
