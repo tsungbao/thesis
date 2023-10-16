@@ -25,6 +25,16 @@ There are five steps in total.
 1. docker-compose up --build -d
 
 ### Input
+There are four parameters as the input. They are
+1. $t_\ell$: Introduced above. Note that $t_\ell = -1$% means the random access pattern is being used instead of the hot-cold access pattern introduced above.
+
+2. $r$: Introduced above.
+  
+3. $M/s$: The ratio of the number of the victim blocks per round of garbage collection to the number of blocks in the window.
+   
+4. $u/t$: The ratio of logical capacity to physical capacity.
+
+The inputs are hard-coded in test/basic_test.cpp and shown in the following figure.
 
 ### Output
 
