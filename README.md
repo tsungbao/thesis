@@ -22,19 +22,31 @@ There are five steps in total.
 
 ## Program
 ### How to start the program?
+```
 1. docker-compose up --build -d
+2. docker exec -it program-mythesis-1 sh
+```
+===== NOW, WE'RE IN THE CONTAINER ====
 
-### Input
+```
+3. ./bin/test.o
+```
+
+After running `./bin/test.o` program, output will be sent to `result_average.txt` in a ***docker volume (host volume)*** linked to `docker_volume`, which is a ***host directory***, for persistent storage.
+
+### Inputs
 There are four parameters as the input. They are
 1. $t_\ell$: Introduced above. Note that $t_\ell = -1$% means the random access pattern is being used instead of the hot-cold access pattern introduced above.
 
 2. $r$: Introduced above.
-  
-3. $M/s$: The ratio of the number of the victim blocks per round of garbage collection to the number of blocks in the window.
-   
-4. $u/t$: The ratio of logical capacity to physical capacity.
 
-The inputs are hard-coded in test/basic_test.cpp and shown in the following figure.
+3. $u/t$: The ratio of logical capacity to physical capacity.
+
+4. $M/s$: The ratio of the number of the victim blocks per round of garbage collection to the number of blocks in the window.
+   
+
+The inputs are hard-coded in test/basic_test.cpp as shown in the following figure.
+![alt text](https://github.com/tsungbao/thesis/blob/master/miscellaneous/inputs.jpg?raw=true)
 
 ### Output
 
