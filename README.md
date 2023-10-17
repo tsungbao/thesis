@@ -73,5 +73,5 @@ For example:
 ```
 
 ### Class diagram
-
+Please refer to `class diagram.drawio`.
 ### Special parts
