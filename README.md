@@ -49,7 +49,29 @@ The inputs are hard-coded in `test/basic_test.cpp` as shown in the following fig
 ![alt text](https://github.com/tsungbao/thesis/blob/master/miscellaneous/inputs.jpg?raw=true)
 
 ### Output
-The outputs are in `docker_volume/result_average.txt` with the following format.
+The outputs are stored in `docker_volume/result_average.txt` with each row formalized as following:
+
+**$t_\ell%$, $u/t$, $r$, $M/s$, standard error of 100 $A_f$, [100 $A_f$ under the set of parameters shown on the left-hand side]**
+
+Note that $A_f$ is a random variable; therefore, we run the program under the same set of parameters 100 times. The average value
+of 100 $A_f$ with low standard error is well-representative.
+
+For example:
+
+```
+.
+.
+.
+-1%,50%,500,0.3,0.24495,1.3253e-05,    [0.244888, 0.245041, 0.24473, 0.244697, 0.244939, ..., 0.24504]
+-1%,50%,500,0.5,0.246529,1.3237e-05,    [0.246847, 0.246318, 0.246572, 0.246386, 0.246525, ..., 0.246456]
+-1%,50%,500,0.7,0.248185,1.45314e-05,    [0.247885, 0.247993, 0.248288, 0.248198, 0.247944, ..., 0.248387]
+-1%,50%,1000,0.1,0.253957,1.23534e-05,    [0.254002, 0.254011, 0.253864, 0.254029, 0.253955, ..., 0.253922]
+-1%,50%,1000,0.3,0.255487,1.33078e-05,    [0.255143, 0.255475, 0.255365, 0.255414, 0.255476, ..., 0.255477]
+.
+.
+.
+```
+
 ### Class diagram
 
 ### Special parts
